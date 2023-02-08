@@ -16,7 +16,7 @@
         {
             if (z == true)
             {
-                if (x + y == 1 && x + y == -1)
+                if (x + y == 1 || x + y == -1)
                 {
                     return $"{x + y} dollar";
                 }
@@ -37,7 +37,9 @@
         {
             Console.WriteLine(Add(1, 2)); 
             Console.WriteLine(Add(1.1m, 1.1m)); 
-            Console.WriteLine(Add(1, 2, true)); 
+            Console.WriteLine(Add(1, 2, true));
+            Console.WriteLine(Add(0, 1, true));
+            Console.WriteLine(Add(0, -1, true));
             Console.WriteLine(Add(1, 2, false)); 
         }
     }
